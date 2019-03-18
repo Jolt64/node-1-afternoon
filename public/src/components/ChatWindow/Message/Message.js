@@ -39,7 +39,10 @@ export default class Message extends Component {
         {
           editting
           ?
+          <div>
+            <input className="Message__input">test</input>
             <input className="Message__input" value={ this.state.text } onChange={ this.handleChange } onKeyPress={ this.edit } />
+          </div>
           :
             <span className="Message__text">{text}</span>
         }
